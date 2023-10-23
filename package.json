@@ -1,0 +1,15 @@
+{
+  "name": "ig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ig.js",
+  "scripts": {
+    "start": "node ig.js >> log.log 2>> err.log",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^18.1.0"
+  }
+}
