@@ -21,8 +21,8 @@ function delay(time) {
   await page.type('input[name="username"]', config.user);
   await page.type('input[name="password"]', config.pass);
   await page.click('button[type="submit"]');
-  await page.waitForSelector('._ac8f');
-  await delay(5000);
+  //await page.waitForSelector('._ac8f');
+  await delay(10000);
 
   console.log('Last Posts:')
   var users = require('./following.js');
@@ -35,7 +35,7 @@ function delay(time) {
   for (user of users) {
     await page.goto('http://instagram.com/'+user);
 
-    const searchResultSelector = 'main article a';
+    const searchResultSelector = 'a.x9f619';
     try {
       await page.waitForSelector(searchResultSelector);
       await delay(2000);
